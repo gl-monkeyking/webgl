@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>triangles</title>
+  <script id="shader-vs" type="x-shader/x-vertex">
+    attribute vec3 position;
+    void main() {
+      gl_Position = vec4(position, 1.0);
+    }
+  </script>
+  <script id="shader-fs" type="x-shader/x-fragment">
+    void main() {
+      gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+    }
+  </script>
+</head>
+<body>
+  <canvas id="container" width="500" height="500"></canvas>
+</body>
+</html>
